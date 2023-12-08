@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Buscar en la Base de Datos{% endblock %}
+
+{% block content %}
+    <h2>Buscar en la Base de Datos</h2>
+
+    <form method="get">
+        {% csrf_token %}
+        {{ busqueda_form }}
+        <button type="submit">Buscar</button>
+    </form>
+    
+{% endblock %}
